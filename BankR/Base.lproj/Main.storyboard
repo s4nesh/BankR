@@ -37,14 +37,27 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-IK-XAB">
-                                        <rect key="frame" x="114.66666666666669" y="111.99999999999999" width="70.333333333333314" height="34.333333333333329"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Log In"/>
-                                        <connections>
-                                            <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kmE-Kn-ge2"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="Yqa-nF-nW2">
+                                        <rect key="frame" x="56.333333333333343" y="111.99999999999999" width="187" height="34.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ul9-IK-XAB">
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Log In"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kmE-Kn-ge2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpk-lg-9Y4">
+                                                <rect key="frame" x="103" y="0.0" width="84" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                                <connections>
+                                                    <action selector="signUpButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hF-Z8-RtR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrr-eC-45G">
                                         <rect key="frame" x="73.999999999999986" y="165.33333333333331" width="151.66666666666663" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
@@ -70,6 +83,7 @@
                     <connections>
                         <outlet property="logInButton" destination="Ul9-IK-XAB" id="JFm-7O-7Kt"/>
                         <outlet property="passwordField" destination="MFA-g7-oB6" id="JZo-oF-1Jo"/>
+                        <outlet property="signUpButton" destination="xpk-lg-9Y4" id="sf9-tC-FU2"/>
                         <outlet property="usernameField" destination="VWQ-KP-5Ef" id="zCD-4Q-azJ"/>
                         <segue destination="4kh-ti-373" kind="show" identifier="loggedIn" id="k0q-3X-Gmd"/>
                     </connections>

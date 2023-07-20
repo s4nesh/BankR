@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "signUpScreen", sender: sender)
     }
     
 }

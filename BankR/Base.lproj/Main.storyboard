@@ -86,6 +86,7 @@
                         <outlet property="signUpButton" destination="xpk-lg-9Y4" id="sf9-tC-FU2"/>
                         <outlet property="usernameField" destination="VWQ-KP-5Ef" id="zCD-4Q-azJ"/>
                         <segue destination="4kh-ti-373" kind="show" identifier="loggedIn" id="k0q-3X-Gmd"/>
+                        <segue destination="fia-DW-ilE" kind="show" identifier="signUpScreen" id="mO4-N4-TO7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,7 +107,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTm-0w-D7W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="3.6945812807881775"/>
+            <point key="canvasLocation" x="1476" y="-281"/>
+        </scene>
+        <!--Sign Up-->
+        <scene sceneID="vvf-au-VWk">
+            <objects>
+                <viewController id="fia-DW-ilE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="slK-j8-JoN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="CCM-Ju-Rct"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n4e-UL-s40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1476" y="383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vkc-OL-1EX">
@@ -128,6 +145,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

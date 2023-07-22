@@ -112,18 +112,57 @@
         <!--Sign Up-->
         <scene sceneID="vvf-au-VWk">
             <objects>
-                <viewController id="fia-DW-ilE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignupViewcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fia-DW-ilE" customClass="SignupViewcontroller" customModule="BankR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="slK-j8-JoN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="b7k-Z5-1VX">
+                                <rect key="frame" x="37.666666666666657" y="292.33333333333331" width="300" height="227.33333333333331"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7Ww-CL-dLa">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="152"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First and last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Fe-zh-mEM">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ID Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bMU-Xy-0X4">
+                                                <rect key="frame" x="0.0" y="59" width="300" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lw0-kJ-Mzs">
+                                                <rect key="frame" x="0.0" y="118" width="300" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="5G9-eY-OZH"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MN6-MK-r6Z">
+                                        <rect key="frame" x="108" y="193" width="84" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CCM-Ju-Rct"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="b7k-Z5-1VX" firstAttribute="centerY" secondItem="slK-j8-JoN" secondAttribute="centerY" id="T8i-5E-u9j"/>
+                            <constraint firstItem="b7k-Z5-1VX" firstAttribute="centerX" secondItem="slK-j8-JoN" secondAttribute="centerX" id="Y0B-Fb-pUR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4e-UL-s40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1476" y="383"/>
+            <point key="canvasLocation" x="1476" y="382.75862068965517"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vkc-OL-1EX">

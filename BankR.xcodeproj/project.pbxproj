@@ -69,6 +69,7 @@
 				0BF3699B2A69934600A255DD /* AppDelegate.swift */,
 				0BF3699D2A69934600A255DD /* SceneDelegate.swift */,
 				0BF3699F2A69934600A255DD /* ViewController.swift */,
+				0BC91BB42A6C2F8F00DE3488 /* SignupViewcontroller.swift */,
 				0BF369A12A69934600A255DD /* Main.storyboard */,
 				0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */,
 				0BC91BB02A6C2D4800DE3488 /* Functions.swift */,
@@ -77,7 +78,6 @@
 				0BF369A42A69934700A255DD /* Assets.xcassets */,
 				0BF369A62A69934700A255DD /* LaunchScreen.storyboard */,
 				0BF369A92A69934700A255DD /* Info.plist */,
-				0BC91BB42A6C2F8F00DE3488 /* SignupViewcontroller.swift */,
 			);
 			path = BankR;
 			sourceTree = "<group>";

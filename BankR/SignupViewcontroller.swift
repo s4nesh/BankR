@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SignupViewcontroller: UIViewController {
+class SignupViewcontroller: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var signupNameInput: UITextField!
     @IBOutlet weak var signupIDNumberInput: UITextField!
@@ -16,9 +16,17 @@ class SignupViewcontroller: UIViewController {
     @IBOutlet weak var alertText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        // The delagate method added to dismiss the keyboard when pressing return on the keyboard. Snippet taken from the web
         
+        signupNameInput.delegate = self
+        signupAddressInput.delegate = self
     }
+    
+    // Snippet taken from the internet to dismis keyboard. Class also modified: added UITextfieldDelegate
+    @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       textField.resignFirstResponder() // dismiss keyboard
+       return true
+   }
     
     func creatAccount() -> Account? {
         guard let nameInput = signupNameInput.text,

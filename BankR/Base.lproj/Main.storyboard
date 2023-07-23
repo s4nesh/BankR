@@ -147,9 +147,19 @@
                                         <rect key="frame" x="108" y="193" width="84" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signupButtonTapped:" destination="fia-DW-ilE" eventType="touchUpInside" id="Nt7-jT-MWq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-gl-5Ms">
+                                <rect key="frame" x="37" y="234" width="300" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CCM-Ju-Rct"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
@@ -159,6 +169,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH"/>
+                    <connections>
+                        <outlet property="alertText" destination="WIi-gl-5Ms" id="9eq-fU-5yS"/>
+                        <outlet property="signupAddressInput" destination="lw0-kJ-Mzs" id="AiD-1Q-kbA"/>
+                        <outlet property="signupIDNumberInput" destination="bMU-Xy-0X4" id="C1f-Ej-A0M"/>
+                        <outlet property="signupNameInput" destination="3Fe-zh-mEM" id="XrL-U1-W7V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4e-UL-s40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

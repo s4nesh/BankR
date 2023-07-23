@@ -9,3 +9,4 @@ import Foundation
 
 var accountNumbers = [100001]
 var savingsAccountNumbers = [200001]
+var accounts = [Account]()

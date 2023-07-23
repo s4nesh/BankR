@@ -36,10 +36,10 @@ class Account {
     
 }
 
-class SavingsAccount: Account {
-    override func assignAccountID() {
-        let lasAccountNumberPosition = savingsAccountNumbers.count - 1
-        let previousAccountNumber = savingsAccountNumbers[lasAccountNumberPosition]
-        accountID = previousAccountNumber + 1
-    }
-}
+//class SavingsAccount: Account {
+//    override func assignAccountID() {
+//        let lasAccountNumberPosition = savingsAccountNumbers.count - 1
+//        let previousAccountNumber = savingsAccountNumbers[lasAccountNumberPosition]
+//        accountID = previousAccountNumber + 1
+//    }
+//}

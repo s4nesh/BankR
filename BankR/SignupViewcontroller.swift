@@ -14,10 +14,11 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var signupIDNumberInput: UITextField!
     @IBOutlet weak var signupAddressInput: UITextField!
     @IBOutlet weak var alertText: UILabel!
+    @IBOutlet weak var barButtonItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         // The delagate method added to dismiss the keyboard when pressing return on the keyboard. Snippet taken from the web
-        
+        barButtonItem.title = "Cancel"
         signupNameInput.delegate = self
         signupAddressInput.delegate = self
     }
@@ -40,10 +41,12 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
         print("hello there")
         let createdAccount = creatAccount()
         if let createdAccount = createdAccount {
+            barButtonItem.title = "Done"
             createdAccount.assignAccountID()
             accountNumbers.append(createdAccount.accountID)
             accounts.append(createdAccount)
             alertText.text = "Account created"
+            
         } else {
             alertText.text = "All fields required"
         }

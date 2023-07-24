@@ -169,7 +169,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH">
-                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="cNF-dd-0m6">
+                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="cNF-dd-0m6">
                             <connections>
                                 <segue destination="QK4-sL-5ld" kind="unwind" unwindAction="unwindToLoginWithUnwindSegue:" id="jCk-HR-I40"/>
                             </connections>
@@ -177,6 +177,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="alertText" destination="WIi-gl-5Ms" id="9eq-fU-5yS"/>
+                        <outlet property="barButtonItem" destination="cNF-dd-0m6" id="6JF-QP-m2B"/>
                         <outlet property="signupAddressInput" destination="lw0-kJ-Mzs" id="AiD-1Q-kbA"/>
                         <outlet property="signupIDNumberInput" destination="bMU-Xy-0X4" id="C1f-Ej-A0M"/>
                         <outlet property="signupNameInput" destination="3Fe-zh-mEM" id="XrL-U1-W7V"/>

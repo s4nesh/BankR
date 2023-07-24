@@ -168,7 +168,13 @@
                             <constraint firstItem="b7k-Z5-1VX" firstAttribute="centerX" secondItem="slK-j8-JoN" secondAttribute="centerX" id="Y0B-Fb-pUR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH"/>
+                    <navigationItem key="navigationItem" title="Sign Up" largeTitleDisplayMode="always" id="UrZ-3H-iLH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="cNF-dd-0m6">
+                            <connections>
+                                <segue destination="QK4-sL-5ld" kind="unwind" unwindAction="unwindToLoginWithUnwindSegue:" id="jCk-HR-I40"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="alertText" destination="WIi-gl-5Ms" id="9eq-fU-5yS"/>
                         <outlet property="signupAddressInput" destination="lw0-kJ-Mzs" id="AiD-1Q-kbA"/>
@@ -177,6 +183,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4e-UL-s40" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="QK4-sL-5ld" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1476" y="382.75862068965517"/>
         </scene>

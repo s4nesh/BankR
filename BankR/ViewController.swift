@@ -36,5 +36,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         performSegue(withIdentifier: "signUpScreen", sender: sender)
     }
     
+    @IBAction func unwindToLogin(unwindSegue: UIStoryboardSegue) {
+        
+    }
 }
 

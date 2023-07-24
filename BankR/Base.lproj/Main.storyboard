@@ -179,6 +179,7 @@
                         <outlet property="alertText" destination="WIi-gl-5Ms" id="9eq-fU-5yS"/>
                         <outlet property="barButtonItem" destination="cNF-dd-0m6" id="6JF-QP-m2B"/>
                         <outlet property="signupAddressInput" destination="lw0-kJ-Mzs" id="AiD-1Q-kbA"/>
+                        <outlet property="signupButton" destination="MN6-MK-r6Z" id="V2O-5c-Hav"/>
                         <outlet property="signupIDNumberInput" destination="bMU-Xy-0X4" id="C1f-Ej-A0M"/>
                         <outlet property="signupNameInput" destination="3Fe-zh-mEM" id="XrL-U1-W7V"/>
                     </connections>

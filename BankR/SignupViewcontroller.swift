@@ -30,22 +30,13 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
        return true
    }
     
-    func creatAccount() -> Account? {
-        guard let nameInput = signupNameInput.text,
-              let IDNumberInput = signupIDNumberInput.text,
-              let addressInput = signupAddressInput.text else {return nil}
-        let newAccount = Account(clientName: nameInput, clientIDNumber: Int(IDNumberInput), clientAddress: addressInput)
-        return newAccount
-    }
     
     @IBAction func signupButtonTapped(_ sender: UIButton) {
         print("hello there")
-        let createdAccount = creatAccount()
+        let createdAccount = createAccount(nameInput: signupNameInput.text, idNumberInput: signupIDNumberInput.text, addressInput: signupAddressInput.text)
         if let createdAccount = createdAccount {
+            processNewAccount(for: createdAccount)
             barButtonItem.title = "Done"
-            createdAccount.assignAccountID()
-            accountNumbers.append(createdAccount.accountID)
-            accounts.append(createdAccount)
             alertText.text = "Account created"
             signupButton.isEnabled = false
             

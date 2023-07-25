@@ -40,11 +40,12 @@ class SavingsAccount: Account {
 }
 
 
+var accounts = [Account]()
 
+var newAccount = Account(clientName: "Sanesh", clientIDNumber: 3451, clientAddress: "Todd street")
 
-func createAccount() {
-//get user details from textFields
-    
+func makeReference(with account: Account) {
+    var 
 }
 
 

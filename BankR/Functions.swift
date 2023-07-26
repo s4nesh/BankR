@@ -23,3 +23,10 @@ func processNewAccount(for account: Account) {
     accountNumbers.append(account.accountID)
     accounts.append(account)
 }
+
+
+// Login function
+
+func clientExistOnDatabase(clientName: String?, clientID: Int?) {
+   
+}

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0BC91BAF2A6C2CED00DE3488 /* AccountClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */; };
 		0BC91BB12A6C2D4800DE3488 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB02A6C2D4800DE3488 /* Functions.swift */; };
-		0BC91BB32A6C2D6E00DE3488 /* DataContainers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB22A6C2D6E00DE3488 /* DataContainers.swift */; };
+		0BC91BB32A6C2D6E00DE3488 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */; };
 		0BC91BB52A6C2F8F00DE3488 /* SignupViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB42A6C2F8F00DE3488 /* SignupViewcontroller.swift */; };
 		0BF3699C2A69934600A255DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3699B2A69934600A255DD /* AppDelegate.swift */; };
 		0BF3699E2A69934600A255DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3699D2A69934600A255DD /* SceneDelegate.swift */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClass.swift; sourceTree = "<group>"; };
 		0BC91BB02A6C2D4800DE3488 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
-		0BC91BB22A6C2D6E00DE3488 /* DataContainers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainers.swift; sourceTree = "<group>"; };
+		0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		0BC91BB42A6C2F8F00DE3488 /* SignupViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewcontroller.swift; sourceTree = "<group>"; };
 		0BF369982A69934600A255DD /* BankR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF3699B2A69934600A255DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				0BF369A12A69934600A255DD /* Main.storyboard */,
 				0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */,
 				0BC91BB02A6C2D4800DE3488 /* Functions.swift */,
-				0BC91BB22A6C2D6E00DE3488 /* DataContainers.swift */,
+				0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */,
 				0BF369AF2A69988500A255DD /* ClientStructure.swift */,
 				0BF369A42A69934700A255DD /* Assets.xcassets */,
 				0BF369A62A69934700A255DD /* LaunchScreen.storyboard */,
@@ -160,7 +160,7 @@
 				0BC91BAF2A6C2CED00DE3488 /* AccountClass.swift in Sources */,
 				0BF3699E2A69934600A255DD /* SceneDelegate.swift in Sources */,
 				0BC91BB12A6C2D4800DE3488 /* Functions.swift in Sources */,
-				0BC91BB32A6C2D6E00DE3488 /* DataContainers.swift in Sources */,
+				0BC91BB32A6C2D6E00DE3488 /* GlobalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,6 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
         } else {
             alertText.text = "All fields required"
         }
-        print(accounts)
+        print(accounts[0])
     }
 }

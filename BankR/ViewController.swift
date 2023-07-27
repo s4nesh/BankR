@@ -40,7 +40,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         
     }
-   
+    //User as? to downcast to the correct viewcontroller to pass the data. 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let loginScreen = segue.destination as? LogInViewController,
+           let usernameField = usernameField.text {
+            loginScreen.title = "Welcome \(usernameField)"
+        }
+            
+       }
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "signUpScreen", sender: sender)

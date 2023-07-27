@@ -32,7 +32,6 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func signupButtonTapped(_ sender: UIButton) {
-        print("hello there")
         let createdAccount = createAccount(nameInput: signupNameInput.text, idNumberInput: signupIDNumberInput.text, addressInput: signupAddressInput.text)
         if let createdAccount = createdAccount {
             processNewAccount(for: createdAccount)
@@ -43,6 +42,5 @@ class SignupViewcontroller: UIViewController, UITextFieldDelegate {
         } else {
             alertText.text = "All fields required"
         }
-        print(accounts[0])
     }
 }

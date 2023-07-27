@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B85A30B2A72CC8D00DF3830 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B85A30A2A72CC8D00DF3830 /* LogInViewController.swift */; };
 		0BC91BAF2A6C2CED00DE3488 /* AccountClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */; };
 		0BC91BB12A6C2D4800DE3488 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB02A6C2D4800DE3488 /* Functions.swift */; };
 		0BC91BB32A6C2D6E00DE3488 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B85A30A2A72CC8D00DF3830 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountClass.swift; sourceTree = "<group>"; };
 		0BC91BB02A6C2D4800DE3488 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				0BC91BB42A6C2F8F00DE3488 /* SignupViewcontroller.swift */,
 				0BF369A12A69934600A255DD /* Main.storyboard */,
 				0BC91BAE2A6C2CED00DE3488 /* AccountClass.swift */,
+				0B85A30A2A72CC8D00DF3830 /* LogInViewController.swift */,
 				0BC91BB02A6C2D4800DE3488 /* Functions.swift */,
 				0BC91BB22A6C2D6E00DE3488 /* GlobalData.swift */,
 				0BF369AF2A69988500A255DD /* ClientStructure.swift */,
@@ -155,6 +158,7 @@
 			files = (
 				0BF369B02A69988500A255DD /* ClientStructure.swift in Sources */,
 				0BF369A02A69934600A255DD /* ViewController.swift in Sources */,
+				0B85A30B2A72CC8D00DF3830 /* LogInViewController.swift in Sources */,
 				0BC91BB52A6C2F8F00DE3488 /* SignupViewcontroller.swift in Sources */,
 				0BF3699C2A69934600A255DD /* AppDelegate.swift in Sources */,
 				0BC91BAF2A6C2CED00DE3488 /* AccountClass.swift in Sources */,

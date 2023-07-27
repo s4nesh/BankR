@@ -87,10 +87,10 @@
             </objects>
             <point key="canvasLocation" x="700" y="3.6945812807881775"/>
         </scene>
-        <!--View Controller-->
+        <!--Log In View Controller-->
         <scene sceneID="Uvd-S2-Zca">
             <objects>
-                <viewController id="4kh-ti-373" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4kh-ti-373" customClass="LogInViewController" customModule="BankR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QNv-PN-Aby">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

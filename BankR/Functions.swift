@@ -31,6 +31,10 @@ func clientExistOnDatabase(clientName: String?, clientID: Int?) {
    
 }
 
+
+
+
+// The function getAccount , returns an account that matches the first name.
 func getAccount(client: String?) -> Account? {
     guard let clientName = client else {return nil}
     for account in accounts {

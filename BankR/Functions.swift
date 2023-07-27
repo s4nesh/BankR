@@ -30,3 +30,13 @@ func processNewAccount(for account: Account) {
 func clientExistOnDatabase(clientName: String?, clientID: Int?) {
    
 }
+
+func getAccount(client: String?) -> Account? {
+    guard let clientName = client else {return nil}
+    for account in accounts {
+        if account.clientName == clientName {
+            return account
+        }
+    }
+    return nil // default for code to run
+}

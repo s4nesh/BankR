@@ -28,9 +28,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 
     
+    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "loggedIn", sender: sender)
+        let currentAccount = getAccount(client: usernameField.text)
+        if let currentAccount = currentAccount {
+            if let passwordField = passwordField.text {
+                if currentAccount.clientIDNumber == Int(passwordField) {
+                    performSegue(withIdentifier: "loggedIn", sender: sender)
+                }
+            }
+        }
+        
     }
+   
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "signUpScreen", sender: sender)

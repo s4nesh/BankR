@@ -41,8 +41,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if let passwordField = passwordField.text {
                 if currentAccount.clientIDNumber == Int(passwordField) {
                     performSegue(withIdentifier: "loggedIn", sender: sender)
+                    clearFields()
+                } else {
+                    alertText.text = "ID Number incorrect"
                 }
             }
+        }
+        else {
+            alertText.text = "Account not found. Have you signed up?"
         }
         
     }
@@ -57,6 +63,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func signUpButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "signUpScreen", sender: sender)
+        clearFields()
     }
     
     @IBAction func unwindToLogin(unwindSegue: UIStoryboardSegue) {

@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
+    @IBOutlet weak var alertText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,6 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func clearFields() {
         usernameField.text = nil
         passwordField.text = nil
+        alertText.text = nil
     }
     
     

@@ -27,6 +27,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+    func clearFields() {
+        usernameField.text = nil
+        passwordField.text = nil
+    }
     
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
